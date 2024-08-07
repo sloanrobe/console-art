@@ -1,4 +1,4 @@
-import { rawlist, input  } from '@inquirer/prompts';
+const { rawlist, input  } = require('@inquirer/prompts');
 
 async function askForShape() {
     const answer = await rawlist({
