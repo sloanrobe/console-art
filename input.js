@@ -6,7 +6,7 @@ async function askForShape() {
         choices: [
           { name: 'Square', value: 'square' },
           { name: 'Triangle', value: 'triangle' },
-          { name: 'Upside down pyramid', value: 'pyramid' },
+          { name: 'Pyramid', value: 'pyramid' },
           { name: 'Upside down pyramid', value: 'uPyramid' },
         ],
       });
