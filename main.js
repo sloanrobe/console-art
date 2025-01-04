@@ -8,13 +8,13 @@ async function main() {
 
 // TODO Use input to draw shapes
 
-if (shape === 'triangle') {
+if (input === 'triangle') {
     drawTriangle(dimension)
-} else if (shape === 'square') {
+} else if (input === 'square') {
     drawSquare(dimension)
-} else if (shape === 'pyramid') {
+} else if (input === 'pyramid') {
     drawPyramid(dimension)
-} else if (shape === 'uPyramid') {
+} else if (input === 'uPyramid') {
     drawuPyramid(dimension)
 } else {
     console.log('Please choose one of the following shapes: triangle, square, pyramid, or uPyramid.')
