@@ -38,5 +38,3 @@ function drawuPyramid(dimension) {
         console.log(spaces + stars)
     }
 }
-
-drawuPyramid(5)
