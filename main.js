@@ -1,17 +1,18 @@
 const { input } = require('@inquirer/prompts')
-const { askForShape, askForDimension } = require('./input') 
+const { askForShape, askForDimension } = require('./input')
+const { drawTriangle, drawSquare, drawPyramid, drawuPyramid } = require('./art')
 
 async function main() {
     const shape = await askForShape()
     const dimension = await askForDimension() 
 
-    if (input === 'triangle') {
+    if (shape === 'triangle') {
         drawTriangle(dimension)
-    } else if (input === 'square') {
+    } else if (shape === 'square') {
         drawSquare(dimension)
-    } else if (input === 'pyramid') {
+    } else if (shape === 'pyramid') {
         drawPyramid(dimension)
-    } else if (input === 'uPyramid') {
+    } else if (shape === 'uPyramid') {
         drawuPyramid(dimension)
     } else {
         console.log('Please choose one of the following shapes: triangle, square, pyramid, or uPyramid.')
