@@ -24,10 +24,19 @@ function drawSquare(dimension) {
 }
 
 function drawPyramid(dimension) {
-
+    for (let rowCount = 1; rowCount <= dimension; rowCount++) {
+        const spaces = ' '.repeat(dimension - rowCount)
+        const stars = '*'.repeat(2 * rowCount - 1)
+        console.log(spaces + stars)
+    }
 }
-
 
 function drawuPyramid(dimension) {
-    
+    for (let rowCount = dimension; rowCount >= 1; rowCount--) {
+        const spaces = ' '.repeat(dimension - rowCount)
+        const stars = '*'.repeat(2 * rowCount - 1)
+        console.log(spaces + stars)
+    }
 }
+
+drawuPyramid(5)
