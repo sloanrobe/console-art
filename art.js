@@ -38,3 +38,10 @@ function drawuPyramid(dimension) {
         console.log(spaces + stars)
     }
 }
+
+module.exports = {
+    drawTriangle,
+    drawSquare,
+    drawPyramid,
+    drawuPyramid,
+}
